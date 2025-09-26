@@ -72,7 +72,7 @@ h1 {
 /* Balloons */
 .balloon {
   position: absolute;
-  bottom: -100px;
+  bottom: -80px;
   width: 40px;
   height: 50px;
   border-radius: 50%;
@@ -99,6 +99,7 @@ h1 {
   opacity: 0.8;
   animation: fall 5s linear infinite;
   z-index: 2;
+  top: 0;
 }
 
 /* Hearts for surprise */
@@ -231,11 +232,11 @@ h1 {
   }
 
   .personal-message h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .personal-message p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .container {
