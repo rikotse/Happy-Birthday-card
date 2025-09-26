@@ -10,15 +10,23 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
   text-align: center;
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
 }
 
 h1 {
@@ -115,7 +123,10 @@ h1 {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 100;
-  max-width: 80%;
+  max-width: 500px;
+  width: 90%;
+  max-height: 70vh;
+  overflow-y: auto;
   transition: transform 0.5s;
 }
 
@@ -199,15 +210,35 @@ h1 {
     width: 30px;
     height: 40px;
   }
+
+  .container {
+    min-height: 60vh;
+  }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 10px 0;
   }
 
   .container {
     padding: 10px;
+  }
+
+  .personal-message {
+    padding: 20px;
+  }
+
+  .personal-message h2 {
+    font-size: 1.5rem;
+  }
+
+  .personal-message p {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    min-height: 50vh;
   }
 }
